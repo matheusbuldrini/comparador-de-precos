@@ -8,7 +8,7 @@ class Aliexpress(Loja):
     origin = 'aliexpress'
 
     def str_to_search_url(self, s):
-        return "https://www.aliexpress.com/wholesale?SearchText="+s
+        return "https://pt.aliexpress.com/wholesale?SearchText="+s
 
     def url_to_json(self, url):
         if "aliexpress" not in url:
