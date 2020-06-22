@@ -22,7 +22,6 @@ class Aliexpress(Loja):
         for tag in script_list:
             if 'window.runParams = {"resultCount"' in tag:
                 for line in str(tag).split('\n',3):
-                    print(line)
                     if 'window.runParams = {"resultCount"' in line:
                         j += line[:-1].split("window.runParams = ",1)[1] 
                         break
