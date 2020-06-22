@@ -26,7 +26,8 @@ class Aliexpress(Loja):
                         j += line[:-1].split("window.runParams = ",1)[1] 
                         break
                 break
-     
+        if not j:
+            return {'ads': [], 'errors': True}
         ads_list = json.loads(j)['items']
 
         ads = []
