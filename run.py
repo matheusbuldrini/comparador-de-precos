@@ -10,7 +10,6 @@ app.secret_key = 'any random stringldshfaslicynonrycxuowehnmsda 35fg234dfcv43c4c
 
 @app.route("/")
 def index():
-    ads = search_all_interleave('tv 55')
     return render_template('index.html', ads=[])
 
 @app.route("/search", methods=['GET'])
